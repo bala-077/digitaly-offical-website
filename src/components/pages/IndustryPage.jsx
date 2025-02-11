@@ -78,17 +78,7 @@ const IndustryPage = () => {
 
         <div className="flex flex-col md:flex-row gap-2">
           {/* Title List */}
-          <div className="relative h-fit rounded-sm top-0 w-full md:w-3/12 bg-slate-900 p-2 md:sticky md:top-1">
-            {/* Fixed button for small screens */}
-            <div className="fixed top-1/2 right-0 z-50 text-white text-xl md:hidden">
-              <button
-                onClick={() => setIsTitleVisible(!isTitleVisible)}
-                className="bg-[#F57D20] text-white py-2 px-4 rounded-md font-semibold w-full text-center"
-              >
-                {isTitleVisible ? "<" : ">"}
-              </button>
-            </div>
-
+          <div className="hidden md:block sticky h-full rounded-sm top-0 w-full md:w-3/12 bg-slate-900 p-2 md:top-1">
             {isTitleVisible && (
               <ul className="space-y-4 overflow-y-auto max-h-[600px]" ref={titleListRef}>
                 {loading ? (
