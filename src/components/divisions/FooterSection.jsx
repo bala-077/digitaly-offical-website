@@ -1,12 +1,11 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import digitaly_logo from "../images/digitaly-light.png";
 
 const FooterSection = () => {
   const socialLinks = [
-    { href: "https://facebook.com", icon: <FaFacebookF size={24} />, hoverColor: "hover:bg-blue-600" },
-    { href: "https://twitter.com", icon: <FaTwitter size={24} />, hoverColor: "hover:bg-blue-400" },
-    { href: "https://instagram.com", icon: <FaInstagram size={24} />, hoverColor: "hover:bg-pink-500" },
+    { href: "https://www.facebook.com/profile.php?id=61572642070238", icon: <FaFacebookF size={24} />, hoverColor: "hover:bg-blue-600" },
+    { href: "https://www.instagram.com/digitaly.live/", icon: <FaInstagram size={24} />, hoverColor: "hover:bg-pink-500" },
     { href: "https://linkedin.com", icon: <FaLinkedinIn size={24} />, hoverColor: "hover:bg-blue-700" },
   ];
 

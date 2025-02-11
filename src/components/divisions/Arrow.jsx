@@ -31,7 +31,7 @@ const Arrow = () => {
     <>
       {show && (
         <motion.section
-          className="fixed bottom-2 right-4 z-40  cursor-pointer rounded-full bg-[#F57D20] p-3 shadow-xl hover:bg-blue-700 transition-colors duration-300"
+          className="fixed bottom-2 right-4 z-40  cursor-pointer rounded-full bg-[#F57D20] p-1 shadow-xl hover:bg-[#f5a020] transition-colors duration-300 md:p-3"
           onClick={scrollToTop}
           animate={{
             scale: [0.8, 1.2, 1],
@@ -42,7 +42,7 @@ const Arrow = () => {
             ease: "easeOut",
           }}
         >
-          <FaArrowUp className="text-white text-2xl" />
+          <FaArrowUp className="text-white text-xl md:text-2xl" />
         </motion.section>
       )}
     </>

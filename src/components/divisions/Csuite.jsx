@@ -32,13 +32,6 @@ const Csuit = () => {
       image: aarthi,
       quotes: "Driving creativity and innovation.",
     },
-    {
-      name: "Rajesh Kumar",
-      description: "Technical Advisor",
-      linkedin: "https://www.linkedin.com/in/shirish-shinde-9ab0a5179/",
-      image: arun,
-      quotes: "Empowering the team for excellence.",
-    },
   ];
 
   return (
@@ -49,7 +42,7 @@ const Csuit = () => {
       >
         C-suite
       </h1>
-      <div className="grid grid-cols-1 py-10 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 py-10 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {founders.map((item, index) => (
           <div
             key={index}

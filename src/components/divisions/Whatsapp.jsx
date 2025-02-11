@@ -31,7 +31,7 @@ const Whatsapp = () => {
           href={`https://wa.me/9442338670?text=${preBuiltMessage}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-20 right-4 z-40 md:bottom-20 md:right-5"
+          className="fixed bottom-14 right-4 z-40 md:bottom-20 md:right-5"
           style={{
             animation: "bounce 2s infinite",
           }}
@@ -39,7 +39,7 @@ const Whatsapp = () => {
           <img
             src={whatsapp}
             alt="whatsapp-png-image"
-            className="w-12 h-12 md:w-12 md:h-12"
+            className="w-7 h-7 md:w-12 md:h-12"
             data-aos="fade-left"
           />
         </a>

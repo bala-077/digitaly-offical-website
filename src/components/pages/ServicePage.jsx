@@ -4,7 +4,6 @@ import { ServiceContext } from '../context/ServiceContent';
 import { RiArrowDownDoubleFill } from 'react-icons/ri';
 import FooterSection from '../divisions/FooterSection';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { aos}
 
 const ServicePage = () => {
   const { navTitle } = useContext(NavTitle); // Access navTitle context
