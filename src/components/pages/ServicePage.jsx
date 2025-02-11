@@ -3,7 +3,8 @@ import { NavTitle } from '../context/NavTitle';
 import { ServiceContext } from '../context/ServiceContent';
 import { RiArrowDownDoubleFill } from 'react-icons/ri';
 import FooterSection from '../divisions/FooterSection';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { aos}
 
 const ServicePage = () => {
   const { navTitle } = useContext(NavTitle); // Access navTitle context
@@ -79,23 +80,13 @@ const ServicePage = () => {
 
   return (
     <>
-      <section className="px-6 py-12 bg-slate-800 md:px-6">
+      <section className="px-2 py-12 bg-slate-800 md:px-6">
         <div className="text-center mt-10">
           <h1 className="text-4xl text-white font-bold mb-8">Our Services</h1>
         </div>
         <div className="flex flex-col md:flex-row gap-2">
           {/* Title List */}
-          <div className="relative h-fit rounded-sm top-0 w-full md:w-3/12 bg-slate-900 p-2 md:sticky md:top-1">
-            {/* Toggle Button for Small Screens */}
-            <div className="fixed right-0 md:hidden text-white text-xl mb-4">
-              <button
-                onClick={() => setIsTitleVisible(!isTitleVisible)} // Toggle visibility
-                className="bg-[#F57D20] text-white py-2 px-4 rounded-md font-semibold w-full text-center"
-              >
-                {isTitleVisible ? "<" : ">"}
-              </button>
-            </div>
-
+          <div className="hidden md:block sticky h-full rounded-sm top-0 w-full md:w-3/12 bg-slate-900 p-2 md:sticky md:top-1">
             {/* Conditionally render title list */}
             {isTitleVisible && (
               <ul

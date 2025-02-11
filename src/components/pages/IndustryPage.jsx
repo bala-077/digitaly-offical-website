@@ -71,7 +71,7 @@ const IndustryPage = () => {
 
   return (
     <>
-      <section className="px-6 py-12 bg-slate-800 md:px-6">
+      <section className="px-1 py-12 bg-slate-800 md:px-6">
         <div className="text-center mt-10">
           <h1 className="text-4xl text-white font-bold mb-8">Industries</h1>
         </div>
