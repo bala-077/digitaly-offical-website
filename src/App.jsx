@@ -1,7 +1,6 @@
 import AboutSection from "./components/divisions/AboutSection";
 import Arrow from "./components/divisions/Arrow";
 import ConnectionForm from "./components/divisions/ConnectionForm";
-import Csuite from "./components/divisions/Csuite";
 import FooterSection from "./components/divisions/FooterSection";
 import Projects from "./components/divisions/Projects";
 import ServiceSection from "./components/divisions/ServiceSection";
@@ -38,7 +37,6 @@ function App() {
                       <AboutSection />
                       <ServiceSection />
                       <Projects />
-                      <Csuite />
                       <Staffs />
                       <FooterSection />
                     </>

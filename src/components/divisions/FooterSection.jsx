@@ -6,7 +6,7 @@ const FooterSection = () => {
   const socialLinks = [
     { href: "https://www.facebook.com/profile.php?id=61572642070238", icon: <FaFacebookF size={24} />, hoverColor: "hover:bg-blue-600" },
     { href: "https://www.instagram.com/digitaly.live/", icon: <FaInstagram size={24} />, hoverColor: "hover:bg-pink-500" },
-    { href: "https://linkedin.com", icon: <FaLinkedinIn size={24} />, hoverColor: "hover:bg-blue-700" },
+    { href: "https://www.linkedin.com/in/digitaly-solutions-863729347/", icon: <FaLinkedinIn size={24} />, hoverColor: "hover:bg-blue-700" },
   ];
 
   const quickLinks = [
