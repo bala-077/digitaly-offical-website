@@ -10,7 +10,7 @@ const SideNav = ({ navTitle = {}, isopen, handleClick }) => {
 
   return (
     <div
-      className={`${isopen ? 'left-0' : '-left-[1500px]'} fixed bg-black/90 overflow-x-scroll backdrop-blur-3xl top-0 h-screen w-[100%] transition-all p-6 md:hidden`}
+      className={`${isopen ? 'left-0' : '-left-[1500px]'} fixed bg-black/95 backdrop-blur-3xl top-0 h-screen w-[100%] transition-all p-6 md:hidden`}
     >
       <div className="relative">
         {/* Close button */}

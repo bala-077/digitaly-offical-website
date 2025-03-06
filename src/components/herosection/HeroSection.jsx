@@ -23,18 +23,21 @@ const HeroSection = () => {
       title: "Empowering Your Digital Future with Customized IT Solutions",
       subHead: "End-to-end services for digital growth. Web design, SEO, app development & more.",
       button: "Start Your Digital Transformation",
+      path: '/service-contact'
     },
     {
       image: herosection1,
       title: "Innovate. Transform. Succeed. Digital Marketing Experts at Your Service.",
       subHead: "Harness the power of innovative strategies for business growth.",
-      button: "Get Your Free Consultation",
+      button: "Promote your business digitaly",
+      path: '/contact-form'
     },
     {
       image: herosection2,
       title: "Your Success, Our Commitment: Tailored IT Solutions for Every Industry",
       subHead: "Customized web and mobile development for businesses of all sizes.",
-      button: "Learn How We Can Help",
+      button: "Get connected with the team",
+      path: '/service-contact'
     },
   ];
 
@@ -52,7 +55,7 @@ const HeroSection = () => {
         spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 8000, disableOnInteraction: false }}
         loop={true}
         speed={1000}
         onSlideChange={handleSlideChange}
@@ -71,7 +74,7 @@ const HeroSection = () => {
                   <>
                     <TextAnimation text={slide.title} delay={0.5} />
                     <TextAnimationP text={slide.subHead} delay={1} />
-                    <Button text={slide.button} delay={0.5} onClick={() => navigate('/contact-form')}/>
+                    <button className="px-6 py-3 bg-blue-500 cursor-pointer hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300 mt-6" onClick={() => navigate(slide.path)}>{slide.button}</button>
                   </>
                 )}
               </div>

@@ -22,14 +22,13 @@ const Projects = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
+      (entries, obs) => {
         if (entries[0].isIntersecting) {
           setInView(true);
-        } else {
-          setInView(false);
+          obs.disconnect(); 
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     const section = document.getElementById("projectsSection");
@@ -52,7 +51,7 @@ const Projects = () => {
               className="bg-[#1E293B] p-2 rounded-lg shadow-xl hover:shadow-2xl md:p-6"
             >
               <div className="flex items-center mb-4 text-gray-200">
-                <div className={`transition-all duration-300 hover:scale-125 text-xl md:text-2xl`}>
+                <div className="transition-all duration-300 hover:scale-125 text-xl md:text-2xl">
                   {stat.icon}
                 </div>
                 <h3 className="text-xl text-gray-100 font-semibold ml-2">{stat.label}</h3>
@@ -67,7 +66,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-10 items-center rounded-lg shadow-lg md:mt-20" >
+        <div className="flex flex-col md:flex-row gap-5 mt-10 items-center rounded-lg shadow-lg md:mt-20">
           <div className="hidden md:flex w-4/12 relative justify-center items-center" data-aos="fade-right">
             <img src={partnership} alt="Partnership" className="w-3/4 h-auto relative z-50" />
             <div className="absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 rounded-full h-60 w-60 bg-gradient-to-r from-[#00bfff] to-[#1E90FF] flex justify-center items-center"></div>
@@ -79,7 +78,10 @@ const Projects = () => {
               Collaborate with us to explore innovative digital solutions tailored to empower your business.
               Together, we’ll develop impactful strategies that foster growth and achieve outstanding results.
             </p>
-            <button className="mt-6 px-6 py-3 bg-blue-600 font-bold cursor-pointer text-white rounded-lg hover:bg-blue-700 transition duration-300" onClick={() => navigate('/contact-form')}>
+            <button
+              className="mt-6 px-6 py-3 bg-blue-600 font-bold cursor-pointer text-white rounded-lg hover:bg-blue-700 transition duration-300"
+              onClick={() => navigate('/contact-form')}
+            >
               Reach Us
             </button>
           </div>
