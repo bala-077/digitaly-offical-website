@@ -4,7 +4,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import * as Yup from "yup";
 import FooterSection from "./FooterSection";
-
+import emailjs from "emailjs-com";
 // Service options
 const serviceOptions = [
   "Web App Development",
@@ -70,7 +70,23 @@ const ServiceContact = () => {
               }}
               validationSchema={validationSchema}
               onSubmit={(values) => {
-                console.log("Form Submitted", values);
+                // e.preventDefault();
+                emailjs
+                  .send(
+                    "service_ktdbbi8", // Replace with EmailJS Service ID
+                    "template_wlmgy1q", // Replace with EmailJS Template ID
+                    values,
+                    "advWiXeyNG-_Z1Ykt" // Replace with EmailJS Public Key
+                  )
+                  .then(
+                    (res) => {
+                      alert("Email sent successfully!", res.status);
+                    },
+                    (error) => {
+                      alert("Failed to send email.");
+                      console.error("Email Error:", error);
+                    }
+                  );
               }}
             >
               {({ setFieldValue, isValid, dirty }) => (
