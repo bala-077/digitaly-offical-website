@@ -20,14 +20,8 @@ const FooterSection = () => {
     <footer className="bg-slate-900 text-white py-12">
       <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
         {/* Logo and About Section */}
-        <div className="flex flex-col items-center md:items-start">
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-[#056839] to-[#f64a00] text-transparent bg-clip-text mb-5">
-            Digitaly
-          </h2>
+        <div className="flex flex-col justify-center items-center md:items-start">
           <img src={digitaly_logo} alt="Digitaly-Logo" className="h-40 w-40 mb-5" />
-          <p className="text-gray-300 text-sm mb-6">
-            We create innovative digital solutions that help businesses grow and thrive.
-          </p>
         </div>
 
         {/* Quick Links */}
